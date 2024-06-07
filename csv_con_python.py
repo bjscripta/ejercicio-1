@@ -1,11 +1,12 @@
 import csv
+from csv_con_python import * 
 
 listnombre = []
 
 with open ("nombres.csv", "w",newline="") as archivo:
     escribir = csv.writer(archivo)
     for j in range (3):
-        nombre = input("Ingrese nombre")
+        nombre = input("Ingrese nombre: ")
         listnombre.append(nombre)
         escribir.writerow(listnombre)
 
